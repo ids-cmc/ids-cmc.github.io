@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<title>IDS Cartesian Math Site</title>
+<head>
+<link rel="icon" type="image/png" href="src/hornet-logo-tomato.png" />
+<meta http-equiv='cache-control' content='no-cache' /> 
+<meta http-equiv='expires' content='0' /> 
+<meta http-equiv='pragma' content='no-cache' />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+:root {
+  --lighter-maroon-color: #A63223;
+  --maroon-color: #A42514;
+  --darker-maroon-color: #800000;
+  --more-darker-maroon-color: #7B0A0A;
+  --gold-color: #D18A2B;
+}
+
+body {
+  margin: 0;
+  background-color: var(--darker-maroon-color);
+  background: 
+  	linear-gradient(135deg, #80000055 25%, transparent 25%) 
+     -20px 0/ 40px 40px, 
+    linear-gradient(225deg, #A63223 25%, transparent 25%) 
+     -20px 0/ 40px 40px, 
+    linear-gradient(315deg, #80000055 25%, transparent 25%) 
+     0px 0/ 40px 40px, 
+    linear-gradient(45deg, #A63223 25%, #A42514 25%) 
+     0px 0/ 40px 40px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--maroon-color);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: pink; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FDE3F3; 
+  border: 2px solid pink;
+}
+
+::selection {
+  color: white;
+  background: tomato;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 16px;
+  background-color: var(--maroon-color);
+  background-image: 
+    linear-gradient(var(--maroon-color), var(--more-darker-maroon-color));
+  border: 3px solid #FCD4EC;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 150%;
+}
+
+.header h1 {
+  font-family: 'Rakkas', sans-serif;
+  color: #FCD4EC;
+  text-align: center;
+  letter-spacing: 0.2vw;
+  text-shadow: 0.2vw 0.2vw #DC605A;
+}
+
+.header h1 span {
+  font-size: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin-top: 9rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.content .section {
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: 3px solid var(--gold-color);
+  background-image: 
+    linear-gradient(var(--darker-maroon-color) 20%, var(--maroon-color));
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #DC605A;
+  font-family: 'Rakkas', sans-serif;
+}
+
+.content .section .hscroll-menu {
+  padding: 0.4rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.content .section .hscroll-menu .hscroll-menu-item {
+  width: 25rem;
+  height: 20rem;
+  display: inline-block;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  border: 5px solid var(--gold-color);
+  margin: 0.5rem;
+}
+
+.content .section iframe {
+  display: block;
+}
+
+.content .section table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .section table td {
+  padding: 0.5rem;
+  color: var(--gold-color);
+  font-size: 200%;
+}
+
+.content h1 {
+  color: #D18A2B;
+  letter-spacing: 0.2vw;
+  text-shadow: 0.1vw 0.1vw black;
+  text-decoration: underline;
+  text-decoration-thickness: 20%;
+}
+
+.content hr {
+  background-color: #D18A2B;
+  border-width: 0;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  color: #D18A2B;
+  letter-spacing: 0.2vw;
+  text-shadow: 0.1vw 0.1vw black;
+}
+
+.content h3 {
+  color: #D18A2B;
+  letter-spacing: 0.2vw;
+  text-shadow: 0.1vw 0.1vw black;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 90%;
+  padding: 5px;
+  border-radius: 1%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="src/hornet-logo-pinker.png" width="75" height="75" />
+  <h1>
+    IDS Cartesian Math Site
+    <br>
+    <span>By MSU-IIT IDS Cartesian Math Club</span>
+  </h1>
+  <img src="src/hornet-logo-pinker.png" width="75" height="75" />
+</div>
+
+<div class="content">
+
+<div class="section">
+<h1 align="center">Welcome to IDS: Cartesian Math Site!</h1>
+<h2 align="center">Are you ready to plot your own coordinate? Let's define it!</h2>
+</div>
+
+<div class="section">
+<h1 align="center">Math Resources</h1>
+<div class="hscroll-menu">
+  <div class="hscroll-menu-item">
+    <h2>Grade 7</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+  <div class="hscroll-menu-item">
+    <h2>Grade 8</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+  <div class="hscroll-menu-item">
+    <h2>Grade 9</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+  <div class="hscroll-menu-item">
+    <h2>Grade 10</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+  <div class="hscroll-menu-item">
+    <h2>Grade 11</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+  <div class="hscroll-menu-item">
+    <h2>Grade 12</h2>
+    <hr>
+    <h3>Video Resources</h3>
+    <h3>Notes</h3>
+    <h3>Worksheets</h3>
+    <h3>Interactive Sites</h3>
+    <h3>Book Recommendations</h3>
+  </div>
+</div>
+<h2 align="center">Competitive Mathematics: Video Resources</h2>
+<div class="hscroll-menu">
+  <div class="hscroll-menu-item">
+    <h3>Philippine Mathematical Olympiad</h3>
+    <hr>
+    <iframe width="400vw" height="220vw" src="https://www.youtube.com/embed/?listType=playlist&list=PLpRww_DKmkSYiodL6xsSQyzjhJ8VPtq1K" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="hscroll-menu-item">
+    <h3>Philippine Mathematical Olympiad<br>(PMO) Questions!</h3>
+    <hr>
+    <iframe width="400vw" height="220vw" src="https://www.youtube.com/embed/?listType=playlist&list=PLwoOXflKeB-lNj3giPqqf2EK-O7Ku2g_E" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="hscroll-menu-item">
+    <h3>Math Contests</h3>
+    <hr>
+    <iframe width="400vw" height="220vw" src="https://www.youtube.com/embed/?listType=playlist&list=PLZCDKa1nelMJZd90li2LD1oOALiUyGiZi&index=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<h2 align="center">Competitive Mathematics: Worksheets</h2>
+      <a href="https://drive.google.com/drive/folders/17UMgd1ZzCgctwOc7aJdphDvCP8QcB6i4?usp=sharing">
+    <img src="src/google-drive-icon-gold.png" width="50" height="50" />
+  </a>
+  <h3 align="center">Just click the Google Drive icon above!</h3>
+</div>
+
+<div class="section">
+<h1 align="center">Club Officers</h1>
+<img src="src/cmc-officers-pic.jpg">
+
+<table>
+<tr>
+<td>Coordinator:</td><td>Sir Rovic Perocho</td>
+</tr>
+<tr>
+<td>President:</td><td>Renz Sergio Pactolin</td>
+</tr>
+<tr>
+<td>Vice President:</td><td>Geraldine Hillary Dormitorio</td>
+</tr>
+<tr>
+<td>Secretary:</td><td>Desmond Gold Bongcawel</td>
+</tr>
+<tr>
+<td>Treasurer:</td><td>Princess Shahanie Dagalangit</td>
+</tr>
+<tr>
+<td>Auditor:</td><td>James Oliver Carillo</td>
+</tr>
+<tr>
+<td>P.I.O.:</td><td>Ascel Babayson</td>
+</tr>
+<tr>
+<td>Grade 12 Representative:</td><td>Felipe IV Javier</td>
+</tr>
+<tr>
+<td>Grade 11 Representative:</td><td>Mariane Taladua</td>
+</tr>
+<tr>
+<td>Grade 10 Representative:</td><td>Tracey Joy Valdez</td>
+</tr>
+<tr>
+<td>Grade 9 Representative:</td><td>Mohanie Mulok</td>
+</tr>
+<tr>
+<td>Grade 8 Representative:</td><td>Jeward Chrystofer Co</td>
+</tr>
+<tr>
+<td>Grade 7 Representative:</td><td>TBA</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+</body>
+</html>
